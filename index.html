@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <script>document.documentElement.className += " js";</script>
+    <meta name="description" content="cars.lethimcook.in — a car information guide: specs, key numbers and background on flagship performance cars, rear-wheel-drive sedans, diesel SUVs and Indian motoring icons. Information only — nothing is sold here." />
+    <link rel="icon" href="data:," />
+    <title>Car Guide — Specs &amp; Notable Models | cars.lethimcook.in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/home.css" />
+  </head>
+  <body>
+<div class="loader" id="loader" role="status" aria-label="Loading">
+  <svg class="stage" viewBox="0 0 280 112" fill="none" aria-hidden="true">
+    <line class="speed" x1="4" y1="36" x2="40" y2="36" />
+    <line class="speed s2" x1="0" y1="52" x2="34" y2="52" />
+    <line class="speed s3" x1="8" y1="68" x2="38" y2="68" />
+    <g class="car-body-g">
+      <path fill="var(--ink)" d="M50 86 L54 68 C56 59 65 54 78 50 C92 33 113 22 142 21 C171 20 193 30 207 46 C223 50 239 56 247 63 C253 68 255 74 255 86 L240 86 A17 17 0 0 0 206 86 L112 86 A17 17 0 0 0 78 86 Z" />
+      <path fill="var(--bg)" opacity="0.85" d="M96 47 C107 34 122 28 141 27 L141 44 Z M150 27 C168 27 184 33 196 45 L150 44 Z" />
+      <circle cx="247" cy="70" r="3.5" fill="var(--accent)" />
+      <rect x="58" y="76" width="188" height="3" rx="1.5" fill="var(--accent)" opacity="0.55" />
+      <g class="wheel">
+        <circle cx="95" cy="86" r="13" fill="var(--ink)" stroke="var(--bg)" stroke-width="2" />
+        <path d="M95 76 V96 M86 80 L104 92 M104 80 L86 92" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" />
+        <circle cx="95" cy="86" r="3" fill="var(--bg)" />
+      </g>
+      <g class="wheel">
+        <circle cx="223" cy="86" r="13" fill="var(--ink)" stroke="var(--bg)" stroke-width="2" />
+        <path d="M223 76 V96 M214 80 L232 92 M232 80 L214 92" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" />
+        <circle cx="223" cy="86" r="3" fill="var(--bg)" />
+      </g>
+    </g>
+    <line class="ground" x1="6" y1="103" x2="274" y2="103" />
+  </svg>
+  <div class="wordmark">Car <span>Guide</span></div>
+  <div class="bar" aria-hidden="true"><i></i></div>
+</div>
+    <header class="topbar">
+      <div class="wrap topbar-in">
+        <span class="site-name">cars<span>.lethimcook.in</span></span>
+        <nav class="shelves" aria-label="Categories">
+          <button type="button" data-jump="dream">Flagships &amp; Icons</button>
+          <button type="button" data-jump="sedan">Sedans</button>
+          <button type="button" data-jump="suv">SUVs &amp; 4×4</button>
+          <button type="button" data-jump="small">Small &amp; Sharp</button>
+        </nav>
+      </div>
+    </header>
+    <div class="rule-line">
+      <div class="wrap">An information guide, not a sales listing: <strong>specs and background on notable cars — nothing is sold here.</strong></div>
+    </div>
+
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Car <span class="thin">Guide</span></h1>
+        <p class="page-sub">Specs, key numbers and background on performance cars, sedans, SUVs and Indian motoring icons. Search by name or engine, or filter by category.</p>
+        <div class="head-stats" role="list" aria-label="At a glance">
+          <div class="head-stat" role="listitem"><div class="num" data-count="15">15</div><div class="lbl">Cars profiled with photos &amp; specs</div></div>
+          <div class="head-stat" role="listitem"><div class="num" data-count="4">4</div><div class="lbl">Categories covered</div></div>
+          <div class="head-stat" role="listitem"><div class="num">0</div><div class="lbl">Cars for sale — information only</div></div>
+        </div>
+      </div>
+
+      <div class="browse-bar">
+        <div class="search-row">
+          <label class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.8-3.8"></path></svg>
+            <input id="q" type="search" placeholder="Search cars, engines, categories…" aria-label="Search cars" autocomplete="off" />
+          </label>
+          <span class="count-chip" id="countChip">15 cars</span>
+        </div>
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button type="button" data-filter="all" aria-pressed="true">All cars</button>
+          <button type="button" data-filter="dream" aria-pressed="false">Flagships &amp; Icons</button>
+          <button type="button" data-filter="sedan" aria-pressed="false">Sedans</button>
+          <button type="button" data-filter="suv" aria-pressed="false">SUVs &amp; 4×4</button>
+          <button type="button" data-filter="small" aria-pressed="false">Small &amp; Sharp</button>
+          <button type="button" data-filter="diesel" aria-pressed="false">Diesel</button>
+          <button type="button" data-filter="rwd" aria-pressed="false">Rear-wheel drive</button>
+          <button type="button" data-filter="manual" aria-pressed="false">Manual gearbox</button>
+        </div>
+      </div>
+
+      <main>
+        <section class="reveal" id="featured" aria-labelledby="feat-h">
+          <h2 id="feat-h"><span class="no">01</span>Featured car</h2>
+          <div class="feat">
+            <div class="feat-photo">
+              <a href="cars/bmw-320d.html" aria-label="BMW 320d (F30) — full guide"><img src="assets/img/bmw-320d-hero.jpg" alt="BMW 320d (F30) — blue sedan, side profile" width="1200" height="675" decoding="async" /></a>
+              <span class="feat-badge">Featured</span>
+            </div>
+            <div class="feat-side">
+              <div class="feat-title">
+                <h3><a href="cars/bmw-320d.html">BMW 320d <span class="thin">(F30)</span></a></h3>
+                <p>A rear-wheel-drive diesel sedan with 184 bhp and 380 Nm — among the most accessible used performance sedans in India.</p>
+              </div>
+              <div class="feat-stats" role="list" aria-label="320d key numbers">
+                <div class="stat" role="listitem"><div class="num">184<small>bhp</small></div><div class="lbl">Power</div></div>
+                <div class="stat" role="listitem"><div class="num">380<small>Nm</small></div><div class="lbl">Torque</div></div>
+                <div class="stat" role="listitem"><div class="num">7.6<small>s</small></div><div class="lbl">0–100 km/h</div></div>
+                <div class="stat" role="listitem"><div class="num">235<small>km/h</small></div><div class="lbl">Top speed</div></div>
+              </div>
+              <a class="feat-link" href="cars/bmw-320d.html">Read the full 320d guide →</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="reveal" id="shelf" aria-labelledby="shelf-h">
+          <h2 id="shelf-h"><span class="no">02</span>Browse cars</h2>
+          <div class="cars" id="cars"></div>
+          <p class="empty" id="emptyState">No cars match that search. Try a category above, or a different term.</p>
+        </section>
+
+        <section class="reveal" id="garage" aria-labelledby="garage-h">
+          <h2 id="garage-h"><span class="no">03</span>Key benchmarks</h2>
+          <ul class="points">
+            <li><span class="step">Performance</span><h3>BMW M5 CS</h3><p>The fastest M5 built: 635 bhp from a twin-turbo V8, carbon-fibre bucket seats and a chassis tuned beyond the standard M5.</p></li>
+            <li><span class="step">Value</span><h3>BMW 320d (F30)</h3><p>Rear-wheel drive, diesel torque and balanced handling at used-sedan prices — among the most accessible driver's cars in India.</p></li>
+            <li><span class="step">Longevity</span><h3>Toyota Land Cruiser</h3><p>A diesel V8 in a full-size 4×4 renowned for durability, service life and off-road range.</p></li>
+          </ul>
+        </section>
+
+        <section class="reveal" id="rules" aria-labelledby="rules-h">
+          <h2 id="rules-h"><span class="no">04</span>What this guide covers</h2>
+          <ul class="points">
+            <li><span class="step">Dynamics</span><h3>Handling and balance</h3><p>Priority goes to rear-wheel drive, steering feel and balanced handling. Front-wheel-drive cars are covered when they are known for engaging dynamics — the Octavia vRS and the Abarth Punto are examples.</p></li>
+            <li><span class="step">Character</span><h3>Distinctive engines</h3><p>Coverage favours distinctive engines and engineering — diesel torque, rotary, VTEC and V8s — and cars with physical, analogue controls over screen-heavy designs.</p></li>
+            <li><span class="step">Relevance</span><h3>Real cars, India context</h3><p>Every car covered was sold in India, is available as an import, or is a significant model in Indian motoring. No concept cars.</p></li>
+          </ul>
+        </section>
+        <section class="reveal" id="numbers" aria-labelledby="numbers-h">
+          <h2 id="numbers-h"><span class="no">05</span>By the numbers</h2>
+          <div class="numgrid">
+            <div class="head-stat"><div class="num" data-count="8">8</div><div class="lbl">Manual gearboxes among the cars profiled</div></div>
+            <div class="head-stat"><div class="num" data-count="5">5</div><div class="lbl">Diesel models profiled</div></div>
+            <div class="head-stat"><div class="num" data-count="3">3</div><div class="lbl">V8 models — M5 CS, RS6 Avant and Land Cruiser</div></div>
+            <div class="head-stat"><div class="num" data-count="1">1</div><div class="lbl">Rotary-engined model — the RX-7</div></div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span><span class="rule">About:</span> an information guide to notable cars — specs and background only. Nothing is sold here.</span>
+      </footer>
+    </div>
+
+    <script src="cars-data.js"></script>
+    <script>
+      (function () {
+        var grid = document.getElementById('cars');
+        var FEATURED = 'bmw-320d';
+        window.CARS_DATA.forEach(function (car) {
+          if (car.slug === FEATURED) return;
+          var a = document.createElement('a');
+          a.className = 'car reveal';
+          a.href = car.page;
+          a.setAttribute('data-tags', car.tags);
+          a.setAttribute('data-shelf', car.shelf);
+          var badges = car.badges.map(function (b) {
+            return '<span class="badge' + (b.hot ? ' hot' : '') + '">' + b.t + '</span>';
+          }).join('');
+          var foot = car.foot.map(function (f) { return '<span>' + f + '</span>'; }).join('');
+          a.innerHTML =
+            '<div class="photo"><img src="' + car.photo + '" alt="' + car.photoAlt + '" width="800" height="600" loading="lazy" decoding="async" /></div>' +
+            '<div class="body"><div class="badges">' + badges + '</div>' +
+            '<h3>' + car.name + '</h3><div class="code">' + car.code + '</div>' +
+            '<p class="hook">' + car.hook + '</p><div class="foot">' + foot + '</div></div>';
+          grid.appendChild(a);
+        });
+      })();
+    </script>
+    <script>
+      (function () {
+        var input = document.getElementById('q');
+        var chip = document.getElementById('countChip');
+        var empty = document.getElementById('emptyState');
+        var cards = Array.prototype.slice.call(document.querySelectorAll('.car'));
+        var featured = document.getElementById('featured');
+        var filterBtns = document.querySelectorAll('.chips button');
+        var active = 'all';
+        function apply() {
+          var q = (input.value || '').trim().toLowerCase();
+          var shown = 0;
+          cards.forEach(function (card) {
+            var tags = (card.getAttribute('data-tags') || '') + ' ' + card.textContent.toLowerCase();
+            var shelf = card.getAttribute('data-shelf');
+            var tagList = (card.getAttribute('data-tags') || '').split(/\s+/);
+            var matchFilter = active === 'all' || tagList.indexOf(active) !== -1 || shelf === active;
+            var matchQ = !q || tags.indexOf(q) !== -1;
+            var show = matchFilter && matchQ;
+            card.style.display = show ? '' : 'none';
+            if (show) shown++;
+          });
+          var featTags = 'bmw 320d f30 n47 diesel rwd sedan zf';
+          var featTokens = ['sedan', 'diesel', 'rwd'];
+          var featMatch = (active === 'all' || featTokens.indexOf(active) !== -1) && (!q || featTags.indexOf(q) !== -1 || featured.textContent.toLowerCase().indexOf(q) !== -1);
+          featured.style.display = featMatch ? '' : 'none';
+          var total = shown + (featMatch ? 1 : 0);
+          chip.textContent = total + (total === 1 ? ' car' : ' cars');
+          empty.classList.toggle('show', total === 0);
+        }
+        filterBtns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            filterBtns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+            btn.setAttribute('aria-pressed', 'true');
+            active = btn.getAttribute('data-filter');
+            apply();
+          });
+        });
+        input.addEventListener('input', apply);
+        document.querySelectorAll('.shelves button').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var target = btn.getAttribute('data-jump');
+            filterBtns.forEach(function (b) {
+              var on = b.getAttribute('data-filter') === target;
+              b.setAttribute('aria-pressed', on ? 'true' : 'false');
+              if (on) active = target;
+            });
+            apply();
+            document.getElementById('shelf').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        });
+      })();
+    </script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>
